@@ -1,6 +1,7 @@
 # Py4GW
 
 **Py4GW** is a Python library designed to enhance the Guild Wars experience by providing tools for automation, scripting, and in-game interactions.
+
 ---
 
 ## Features
@@ -19,20 +20,25 @@
 
 ### **Prerequisites**
 
-- Python 3.13.0 32-bit [link](https://www.python.org/downloads/release/python-3130/) (other versions could causes GW Client crashes)
+- Python 3.13.0 32-bit [official release](https://www.python.org/downloads/release/python-3130/) (other versions could causes GW Client crashes)
 - Guild Wars client
 
 ### **Installation**
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/apoguita/Py4GW.git
    ```
+
 2. Navigate to the project directory:
+
    ```bash
    cd Py4GW
    ```
+
 3. Install dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -41,7 +47,7 @@
 
 ## 📂 Directory Structure
 
-```
+```plaintext
 Py4GW/
 ├── Py4GW_python_files/             # Main directory containing all project files
 │   ├── Addons/                     # Add-on extensions (e.g., GWBlackBOX.dll)
@@ -91,7 +97,7 @@ git update-index --skip-worktree Py4GW.ini
 git update-index --skip-worktree Py4GW_Launcher.ini
 ```
 
-You can then verify that the files are correctly skipped by running this command that should output the list of skipped files: 
+You can then verify that the files are correctly skipped by running this command that should output the list of skipped files:
 
 ```bash
 git ls-files -v | grep "^S"
@@ -100,7 +106,7 @@ S Py4GW_Launcher.ini
 S Py4GW_injection_log.txt
 ```
 
-To re-enable local tracking of the files run the following commands: 
+To re-enable local tracking of the files run the following commands:
 
 ```bash
 git update-index --no-skip-worktree Py4GW_injection_log.txt
